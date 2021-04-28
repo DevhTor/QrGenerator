@@ -1,7 +1,7 @@
 var vcard ={
     str_vcard:'BEGIN:VCARD%0d%0aVERSION:3.0%0d%0a',
     end_vcard: '%0d%0aEND:VCARD',
-    goog_chart:'http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=',
+    goog_chart:'http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl=',
 
     build_name: function(){
         
