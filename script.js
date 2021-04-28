@@ -4,15 +4,12 @@ var vcard ={
     goog_chart:'http://chart.apis.google.com/chart?cht=qr&chs=100x100&chl=',
 
     build_name: function(){
-        alert(vcard.str_vcard);
+        
         var first_name = $('input[name="fname"]').val();
         var last_name = $('input[name="lname"').val();
 
         vcard.str_vcard += 'N:' + last_name + ';' + first_name + '%0d%0a' +
         'FN:' + first_name + ' ' + last_name;
-
-        
-        alert(vcard.str_vcard);
     },
 
     build_email:function(){
@@ -34,18 +31,13 @@ var vcard ={
 
         vcard.str_vcard += vcard.end_vcard;
         $('#qr').attr('src', vcard.goog_chart + vcard.str_vcard);
-     console.log(vcard.goog_chart + vcard.str_vcard);   
+        
     }
 }
 
 
 
 $(function(){
-
-    
-
     $('input[id="submit"]').click(vcard.save);
-    
 
-    
 });
